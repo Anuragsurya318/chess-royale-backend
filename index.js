@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "https://chess-royale-frontend.vercel.app", // Replace with your frontend URL
+    origin: "*", // Replace with your frontend URL
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -16,7 +16,7 @@ const io = socketIo(server, {
 // CORS middleware for Express
 app.use(
   cors({
-    origin: "https://chess-royale-frontend.vercel.app", // Replace with your frontend URL
+    origin: "*", // Replace with your frontend URL
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
     credentials: true,
