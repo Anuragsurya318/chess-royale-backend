@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js", // Vercel uses `start` script to run the server
-    "dev": "nodemon index.js", // Use `dev` for local development
+    "start": "node index.js", 
+    "dev": "nodemon index.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +18,6 @@
     "socket.io": "^4.7.5"
   },
   "engines": {
-    "node": "16.x" // Specify the Node.js version you want to use
+    "node": "16.x" 
   }
 }
